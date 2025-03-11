@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 14px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    background-color: #111;
+    color: #4CAF50;
+}
+.boleto {
+    width: 300px;
+}
+.pix {
+    width: 300px;
+    text-align: center;
+    align-self: center;
+}
+.Metodos {
+    display: flex;
+    justify-content: left;
+    gap: 50px;
+}
+.Metodos img{
+    height: auto;
+}
+
