@@ -1,15 +1,19 @@
-body {
+body { 
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Cabeçalho */
 header {
     background-color: #4CAF50;
-    color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
 }
 
+/* Menu de navegação */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -32,23 +36,43 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #111;
     color: #4CAF50;
 }
-.boleto {
-    width: 300px;
-}
-.pix {
-    width: 300px;
-    text-align: center;
-    align-self: center;
-}
+
+/* Container dos métodos de pagamento */
 .Metodos {
     display: flex;
-    justify-content: left;
-    gap: 50px;
-}
-.Metodos img{
-    height: auto;
+    justify-content: center; /* Centraliza os métodos de pagamento */
+    align-items: center; /* Alinha verticalmente */
+    gap: 50px; /* Espaçamento entre os métodos */
+    flex-wrap: wrap; /* Permite quebra em telas menores */
+    margin-top: 50px;
 }
 
+/* Imagens */
+.Metodos img {
+    width: 200px; /* Redimensiona as imagens */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Botões */
+.Metodos .pagamento {
+    text-align: center; /* Centraliza os botões */
+}
+
+.Metodos button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Metodos button:hover {
+    background-color: #4CAF50;
+}
