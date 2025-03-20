@@ -76,3 +76,72 @@ nav ul li a:hover {
 .Metodos button:hover {
     background-color: #4CAF50;
 }
+.caixa {
+    display: none; /* Escondida por padrão */
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Oculta o checkbox */
+#toggle {
+    display: none;
+}
+
+/* Estiliza o botão */
+label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #2670bf;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Caixa oculta por padrão */
+.caixa {
+    display: none;
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+}
+
+/* Quando o checkbox está marcado, mostra a caixa */
+#toggle:checked ~ .caixa {
+    display: block;
+}
+
+.caixa label {
+    display: block;
+    margin-top: 10px;
+}
+
+.caixa input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.caixa button {
+    margin-top: 15px;
+    width: 100%;
+    padding: 10px;
+    background-color: #25cf4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.caixa button:hover {
+    background-color: #218838;
+}

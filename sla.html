@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário na Caixa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Oculta o checkbox */
+        #toggle {
+            display: none;
+        }
+
+        /* Estiliza o botão */
+        label {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #2670bf;
+            color: white;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        /* Caixa oculta por padrão */
+        .caixa {
+            display: none;
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+        }
+
+        /* Quando o checkbox está marcado, mostra a caixa */
+        #toggle:checked ~ .caixa {
+            display: block;
+        }
+
+        .caixa label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        .caixa input {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .caixa button {
+            margin-top: 15px;
+            width: 100%;
+            padding: 10px;
+            background-color: #25cf4d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .caixa button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="checkbox" id="toggle">
+    <label for="toggle">Abrir Formulário</label>
+
+    <div class="caixa">
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefone">Número de Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+</body>
+</html>
